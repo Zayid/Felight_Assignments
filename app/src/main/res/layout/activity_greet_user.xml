@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:hint="Enter First Name"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/etFname"
+        android:background="@drawable/et_design"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Second Name"
+        android:ems="10"
+        android:layout_below="@+id/etFname"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/et_design"
+        android:id="@+id/etSName"
+        android:layout_alignRight="@+id/etFname"
+        android:layout_alignEnd="@+id/etFname" />
+
+    <Button
+        android:text="Greet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="doGreet"
+        android:id="@+id/btnGreet" />
+
+    <TextView
+        android:text="Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGreet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:id="@+id/tvResult" />
+</RelativeLayout>

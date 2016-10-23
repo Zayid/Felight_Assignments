@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <Button
+            android:text="TL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTL"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+
+        <Button
+            android:text="TC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTC"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+
+        <Button
+            android:text="TR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTR"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <Button
+            android:text="CL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCL"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+
+        <Button
+            android:text="CC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCC"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+
+        <Button
+            android:text="CR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCR"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <Button
+            android:text="BL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBL"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+
+        <Button
+            android:text="BC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBC"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+
+        <Button
+            android:text="BR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBR"
+            android:layout_weight="1"
+            android:onClick="dispToast"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whackyard.mytest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/alien_head"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Z Test" />
+        <activity
+            android:name=".NewsActivity"
+            android:label="News" />
+        <activity
+            android:name=".ContextActivity"
+            android:label="Context Demo" />
+        <activity
+            android:name=".ActivityLifecycleActivity"
+            android:label="Activity Lifecycle" />
+        <activity
+            android:name=".Messenger"
+            android:label="Z Messenger" />
+        <activity
+            android:name=".Massage"
+            android:label="Massage" />
+        <activity
+            android:name=".WebViewZ"
+            android:label="Google" />
+        <activity
+            android:name=".ToastActivity"
+            android:label="Toaster" />
+        <activity
+            android:name=".BenchmarkActivity"
+            android:label="Benchmark Array" />
+        <activity
+            android:name=".PopUpActivity"
+            android:label="Background Color Picker" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:label="Calculator" />
+        <activity
+            android:name=".GreetUserActivity"
+            android:label="Greetings" />
+        <activity
+            android:name=".NoXmlActivity"
+            android:label="No XML Please" />
+        <activity android:name=".AnimationActivity"
+            android:label="Animation"/>
+        <activity android:name=".SpalshScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntentHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AudioPlayerActivity"
+            android:label="Music Player" />
+        <activity android:name=".VideoPlayerActivity" />
+        <activity android:name=".NotificationManActivity"
+            android:label="Custom Notification"/>
+    </application>
+
+</manifest>
