@@ -350,11 +350,12 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/btnDummy"
+                    android:id="@+id/btnUserReg"
                     android:textColor="@color/white"
                     android:background="@color/semitrans"
                     android:onClick="doIntnt"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:text="User Registration"/>
             </LinearLayout>
 
         </LinearLayout>

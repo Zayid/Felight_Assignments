@@ -77,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent animation = new Intent(this, AnimationActivity.class);
                 startActivity(animation);
                 break;
+            case R.id.btnUserReg:
+                Intent reg = new Intent(this, UserRegActivity.class);
+                startActivity(reg);
+                break;
         }
 
     }

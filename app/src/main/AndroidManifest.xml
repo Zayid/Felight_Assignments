@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -55,8 +56,9 @@
         <activity
             android:name=".NoXmlActivity"
             android:label="No XML Please" />
-        <activity android:name=".AnimationActivity"
-            android:label="Animation"/>
+        <activity
+            android:name=".AnimationActivity"
+            android:label="Animation" />
         <activity android:name=".SpalshScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,10 +66,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IntentHandlerActivity">
+        <activity android:name=".IntentHandlerActivity"
+            android:label="InstaFilter">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="image/*" />
             </intent-filter>
         </activity>
@@ -75,8 +80,11 @@
             android:name=".AudioPlayerActivity"
             android:label="Music Player" />
         <activity android:name=".VideoPlayerActivity" />
-        <activity android:name=".NotificationManActivity"
-            android:label="Custom Notification"/>
+        <activity
+            android:name=".NotificationManActivity"
+            android:label="Custom Notification" />
+        <activity android:name=".UserRegActivity"
+            android:label="User Registration"></activity>
     </application>
 
 </manifest>

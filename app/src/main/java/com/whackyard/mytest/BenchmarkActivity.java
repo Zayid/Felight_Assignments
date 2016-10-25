@@ -36,6 +36,7 @@ public class BenchmarkActivity extends AppCompatActivity {
     private TextView Insertion;
     private TextView Selection;
     private TextView Merge;
+
     private Button benchBubble;
     private Button benchInsertion;
     private Button benchSelection;
