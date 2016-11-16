@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_super_hero_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.whackyard.mytest.SuperHeroDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                app:srcCompat="@drawable/alien_head"
+                android:id="@+id/ivSuperMain"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSuperDesc"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="12dp" />
+
+            <TextView
+                android:text="Actor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvActor"
+                android:textSize="22sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                app:srcCompat="@drawable/alien_head"
+                android:id="@+id/ivActorReal"
+                android:paddingBottom="16dp"
+                android:paddingTop="8dp"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
