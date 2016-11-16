@@ -1,0 +1,622 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_music"
+    tools:context="com.whackyard.mytest.MusicPlayerUxActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearPlaylist">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10">
+
+            <Button
+                android:text="Playlist"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:id="@+id/button"
+                android:background="@color/black_overlay"
+                android:layout_weight="10" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearFixYou"
+                    android:onClick="rockOn">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:text="Fix You"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_weight="9" />
+
+                    <TextView
+                        android:text="3.30"
+                        android:layout_width="0dp"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Coldplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearBurnigBrdg"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Burning Bridges"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="4.30"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="OneRepublic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearDontLetMe"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Dont Let Me Down"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="4.10"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="The Chainsmokers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearEchoes"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Echoes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="3.30"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Young Guns"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearFallingAway"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Falling Away With You"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="5.21"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Muse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearKeepOn"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Keep On Lying"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="4.02"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Tame Impala"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearLastToKnow"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Last To Know"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="3.56"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Three Days Grace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearPapercut"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Papercut"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="4.35"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Linkin Park"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearPeopleAre"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="People Are Strange"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="3.54"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="The Doors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:background="@color/semitrans"
+                    android:padding="6dp"
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/linearStare"
+                    android:onClick="rockOn">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:text="Stare"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:layout_weight="9" />
+
+                        <TextView
+                            android:text="4.21"
+                            android:layout_width="0dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="Marjorie Fair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/white"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearNowPlaying"
+        android:weightSum="10"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/restart"
+                android:id="@+id/imgBtnBack"
+                android:background="@color/transparent"
+                android:onClick="rockOn"
+                android:layout_weight="2" />
+
+            <Button
+                android:text="Now Playing"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="8"
+                android:textColor="@color/white"
+                android:gravity="center|left"
+                android:textSize="19dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:id="@+id/button3" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.2"
+            app:srcCompat="@drawable/ic_play"
+            android:id="@+id/ivAlbumArt"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <TextView
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:gravity="bottom|center"
+            android:id="@+id/tvTitle" />
+
+        <TextView
+            android:text="Artist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:textColor="@color/orange"
+            android:id="@+id/tvArtist"
+            android:gravity="top|center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="8"
+            android:padding="3dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/repeat"
+                android:id="@+id/imageView4"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/rewind"
+                android:id="@+id/imageView5"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/play_button"
+                android:id="@+id/imageView6"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/fast_forward"
+                android:id="@+id/imageView7"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="4dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/shuffle"
+                android:id="@+id/imageView8"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
